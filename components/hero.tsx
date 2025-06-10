@@ -22,7 +22,8 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">Frontend Developer</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-2">Virgilyn Tamayo</h1>
+          <h2 className="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-6">Junior Software Engineer</h2>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
             Results-driven Engineering Professional with hands-on experience in both frontend and backend development.
           </p>

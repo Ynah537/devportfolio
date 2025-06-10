@@ -12,7 +12,7 @@ export function Footer() {
             <Link href="/" className="text-xl font-bold">
               <span className="text-primary">Dev</span>Portfolio
             </Link>
-            <p className="mt-2 text-gray-400 text-sm">Frontend + Backend Developer</p>
+            <p className="mt-2 text-gray-400 text-sm">Junior Software Engineer</p>
           </div>
 
           <div className="flex space-x-6">
@@ -28,25 +28,6 @@ export function Footer() {
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </Link>
-          </div>
-        </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© {currentYear} All rights reserved.</p>
-
-          <div className="mt-4 md:mt-0">
-            <ul className="flex space-x-6 text-sm text-gray-400">
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Terms of Service
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
       </div>

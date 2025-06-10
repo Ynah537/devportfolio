@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
@@ -10,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
+import { submitContactForm, type ContactFormData } from "@/app/actions/contact"
 
 export function Contact() {
   const { toast } = useToast()
@@ -30,21 +30,38 @@ export function Contact() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      const result = await submitContactForm(formData as ContactFormData)
 
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    })
+      if (result.success) {
+        toast({
+          title: "Message sent!",
+          description: result.message,
+        })
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
-    setIsSubmitting(false)
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        toast({
+          title: "Error",
+          description: result.message,
+          variant: "destructive",
+        })
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
