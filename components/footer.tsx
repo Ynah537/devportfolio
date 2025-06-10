@@ -12,7 +12,7 @@ export function Footer() {
             <Link href="/" className="text-xl font-bold">
               <span className="text-primary">Dev</span>Portfolio
             </Link>
-            <p className="mt-2 text-gray-400 text-sm">Frontend Developer specializing in React and TypeScript</p>
+            <p className="mt-2 text-gray-400 text-sm">Frontend + Backend Developer</p>
           </div>
 
           <div className="flex space-x-6">
