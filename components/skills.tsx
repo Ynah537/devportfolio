@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export function Skills() {
- const skillCategories = [
+const skillCategories = [
   {
     title: "Frontend",
     skills: [
@@ -53,19 +53,23 @@ export function Skills() {
       "Web Scraping",
       "API Integration",
       "IoT Integration",
-      "Version Control",
-      "Virtual Machines",
     ],
   },
   {
-    title: "Soft Skills & Communication",
+    title: "Soft Skills",
+    skills: [
+      "Collaboration and Teamwork",
+      "Documentation",
+      "Problem Solving",
+      "Time Management"
+    ],
+  },
+  {
+    title: "Communication",
     skills: [
       "English",
       "Tagalog",
       "Cebuano",
-      "Collaboration",
-      "Documentation",
-      "Problem Solving",
     ],
   },
   {

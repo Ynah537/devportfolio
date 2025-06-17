@@ -14,8 +14,8 @@ export function Experience() {
         "Developed a responsive web application that allows users to create accounts, generate unique barcodes, and register via barcode scanning.",
         "Created an admin dashboard to manage users, view ride assessments, and track historical ride data with filtering and analytics features.",
         "Built a manager dashboard with an interactive map that displays real-time device tracking (latitude, longitude), battery status, and geolocation updates using IoT data.",
-        "Implemented role-based access for users, admins, and managers to manage reservations, view statistics, and enforce slot limits dynamically.",
-        "Integrated seamless communication between frontend and backend, ensuring real-time updates and robust device-user mapping."
+        "Implemented role-based access for users, admins, and superadmins to manage reservations, view statistics, and enforce slot limits dynamically.",
+        "Integrated seamless communication between frontend and backend, ensuring real-time updates and device-user mapping."
       ],
     },
     {
@@ -33,8 +33,7 @@ export function Experience() {
       technologies: ["React.js", "Next.js", "Chakra UI", "TypeScript"],
       description: [
         "Built a tool that accepts website URLs, scrapes structured content using Puppeteer, and parses the data with OpenAI for enhanced formatting.",
-        "Exported parsed results into downloadable CSV and auto-generated PDF reports for business insights.",
-        "Implemented validation, progress feedback, and error handling for a smoother scraping experience."
+        "Exported parsed results into downloadable CSV.",
       ],
     },
     {

@@ -30,7 +30,7 @@ export function Projects() {
         "Managed item data including name, description, price, and quantity using XAMPP.",
         "Designed a user-friendly UI for efficient stock tracking and updates."
       ],
-      technologies: ["Java", "XAMPP", "MySQL"],
+      technologies: ["C#", "XAMPP", "MySQL"],
       image: "/placeholder.svg",
     },
     {
@@ -64,8 +64,8 @@ export function Projects() {
       description: "A full-featured e-commerce site with product filtering, cart, and checkout functionality.",
       role: "Solo Developer & UI/UX Designer",
       details: [
-        "Designed in Figma and developed a full-featured e-commerce site with product filtering, cart, and checkout.",
-        "Focused on responsive design and seamless shopping experience across devices.",
+        "Developed an e-commerce site with product categories, cart, and checkout.",
+        "Focused on responsive design and seamless shopping experience.",
       ],
       technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Figma"],
       image: "/placeholder.svg?height=400&width=600",
