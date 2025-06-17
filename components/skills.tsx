@@ -30,6 +30,7 @@ const skillCategories = [
       "PHP",
       "MySQL",
       "Firebase",
+      "Go"
     ],
   },
   {
@@ -47,9 +48,6 @@ const skillCategories = [
       "Git",
       "Agile Development",
       "XAMPP",
-      "Docker",
-      "Google Cloud Platform",
-      "Pub/Sub Messaging",
       "Web Scraping",
       "API Integration",
       "IoT Integration",

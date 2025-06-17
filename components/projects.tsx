@@ -41,7 +41,7 @@ export function Projects() {
         "Designed the user interface using Figma for both students and tutors.",
         "Developed core app features enabling tutor search and applications.",
       ],
-      technologies: ["Figma", "React Native (planned)", "Firebase (planned)"],
+      technologies: ["Figma", "Kotlin", "Firebase"],
       image: "/placeholder.svg",
     },
     {
@@ -53,7 +53,7 @@ export function Projects() {
         "Implemented Pub/Sub system to send and receive service pricing data.",
         "Designed a UI for a website as part of a final project presentation."
       ],
-      technologies: ["Docker", "GCP", "Pub/Sub", "HTML", "CSS", "JavaScript"],
+      technologies: ["Docker", "GCP", "Pub/Sub", "HTML", "CSS", "JavaScript", "Go"],
       image: "/placeholder.svg",
     },
   ];
