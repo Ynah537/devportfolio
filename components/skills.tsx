@@ -5,37 +5,78 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export function Skills() {
-  const skillCategories = [
-    {
-      title: "Frontend",
-      skills: [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Next.js",
-        "Responsive Design",
-        "UI/UX Design (Figma)",
-      ],
-    },
-    {
-      title: "Backend",
-      skills: ["NestJS", "Prisma", "PostgreSQL", "REST API"],
-    },
-    {
-      title: "Tools & Methodologies",
-      skills: ["Git", "Agile Development", "Web Scraping", "API Integration", "IoT Integration"],
-    },
-    {
-      title: "Languages",
-      skills: ["English", "Tagalog", "Cebuano"],
-    },
-    {
-      title: "Certifications",
-      skills: ["AWS Certified Cloud Practitioner", "Agile & Scrum 101 (Completed Training)"],
-    },
-  ]
+ const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Mapbox",
+      "Bootstrap",
+      "Responsive Design",
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "REST API",
+      "PHP",
+      "MySQL",
+      "Firebase",
+    ],
+  },
+  {
+    title: "Design & Prototyping",
+    skills: [
+      "Figma",
+      "UI/UX Design",
+      "Wireframing",
+      "User Flows",
+    ],
+  },
+  {
+    title: "Tools & Methodologies",
+    skills: [
+      "Git",
+      "Agile Development",
+      "XAMPP",
+      "Docker",
+      "Google Cloud Platform",
+      "Pub/Sub Messaging",
+      "Web Scraping",
+      "API Integration",
+      "IoT Integration",
+      "Version Control",
+      "Virtual Machines",
+    ],
+  },
+  {
+    title: "Soft Skills & Communication",
+    skills: [
+      "English",
+      "Tagalog",
+      "Cebuano",
+      "Collaboration",
+      "Documentation",
+      "Problem Solving",
+    ],
+  },
+  {
+    title: "Certifications",
+    skills: [
+      "AWS Certified Cloud Practitioner",
+      "Agile & Scrum 101 (Completed Training)",
+    ],
+  },
+]
+
 
   return (
     <section id="skills" className="py-20 bg-gray-50 dark:bg-gray-900">
