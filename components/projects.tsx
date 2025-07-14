@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
-import Image from "next/image"
 
 export function Projects() {
   const collegeProjects = [
@@ -60,17 +59,18 @@ export function Projects() {
 
   const personalProjects = [
     {
-      title: "Online Grocery Store Platform",
-      description: "A full-featured e-commerce site with product filtering, cart, and checkout functionality.",
+      title: "BusTrek",
+      description: "A real-time bus tracking web application that helps commuters track the location of buses in their area.",
       role: "Solo Developer & UI/UX Designer",
       details: [
-        "Developed an e-commerce site with product categories, cart, and checkout.",
-        "Focused on responsive design and seamless shopping experience.",
+        "Developed a web application for commuters to track real-time bus locations and routes.",
+        "Implemented live GPS tracking to show current bus positions on an interactive map.",
+        "Created user-friendly interface for easy navigation and bus schedule information.",
+        "Built with responsive design to work seamlessly on mobile and desktop devices.",
       ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Figma"],
-      image: "/placeholder.svg?height=400&width=600",
-      demoLink: "#",
-      repoLink: "https://github.com/Ynah537/Way-Go",
+      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+      demoLink: "https://bus-tracker-three.vercel.app/?fbclid=IwY2xjawLiYbBleHRuA2FlbQIxMQABHq3XB58dcUmVr7CJ98VGefwiR7X0ShgyJPYf7AgWc3KA5F61k8SBlrz6cppb_aem_X8l8rTCdqkeITJeIxAJ4_w",
+      repoLink: "https://github.com/Ynah537/Bus-Tracker.git",
     },
   ];
 
@@ -108,51 +108,42 @@ export function Projects() {
                 className="mb-12"
               >
                 <Card className="overflow-hidden">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="relative h-64 md:h-full">
-                      <Image
-                        src={project.image || "/placeholder.svg"}
-                        alt={project.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <CardHeader className="p-0 mb-4">
-                        <div className="flex flex-wrap gap-2 mb-3">
-                          {project.technologies.map((tech, i) => (
-                            <Badge key={i} variant="secondary">
-                              {tech}
-                            </Badge>
-                          ))}
-                        </div>
-                        <CardTitle className="text-2xl text-gray-900 dark:text-white">{project.title}</CardTitle>
-                        <CardDescription className="text-gray-600 dark:text-gray-400 mt-1">
-                          {project.role}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="p-0">
-                        <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
-                          {project.details.map((detail, i) => (
-                            <li key={i}>{detail}</li>
-                          ))}
-                        </ul>
-                      </CardContent>
-                      <CardFooter className="p-0 flex gap-4">
-                        <Button asChild>
-                          <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-2 h-4 w-4" />
-                            Live Demo
-                          </a>
-                        </Button>
-                        <Button variant="outline" asChild>
-                          <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
-                            <Github className="mr-2 h-4 w-4" />
-                            Repository
-                          </a>
-                        </Button>
-                      </CardFooter>
-                    </div>
+                  <div className="p-6">
+                    <CardHeader className="p-0 mb-4">
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {project.technologies.map((tech, i) => (
+                          <Badge key={i} variant="secondary">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <CardTitle className="text-2xl text-gray-900 dark:text-white">{project.title}</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400 mt-1">
+                        {project.role}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="p-0">
+                      <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
+                      <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300 mb-6">
+                        {project.details.map((detail, i) => (
+                          <li key={i}>{detail}</li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                    <CardFooter className="p-0 flex gap-4">
+                      <Button asChild>
+                        <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live Demo
+                        </a>
+                      </Button>
+                      <Button variant="outline" asChild>
+                        <a href={project.repoLink} target="_blank" rel="noopener noreferrer">
+                          <Github className="mr-2 h-4 w-4" />
+                          Repository
+                        </a>
+                      </Button>
+                    </CardFooter>
                   </div>
                 </Card>
               </motion.div>
