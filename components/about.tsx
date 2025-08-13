@@ -28,10 +28,12 @@ export function About() {
                 viewport={{ once: true }}
                 className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-                Results-driven Engineering Professional with hands-on experience in both frontend and backend
-                development. Proven ability to lead cross-functional teams and deliver optimized, high-quality web
-                applications. Seeking a challenging Frontend Developer role to apply my technical expertise, industry
-                experience, and passion for building exceptional user interfaces.
+                Junior Software Engineer with experience in building full-stack web applications, integrating
+                APIs, and managing relational databases. Skilled in SQL, data processing, and creating
+                interactive dashboards to visualize information for decision-making. Adept at collaborating
+                with cross-functional teams to develop efficient and user-friendly systems. Seeking to apply
+                technical expertise and analytical skills to support database-driven marketing initiatives and
+                operational analytics.
               </motion.p>
             </CardContent>
           </Card>

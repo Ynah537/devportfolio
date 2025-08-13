@@ -64,7 +64,6 @@ export function Projects() {
       role: "Solo Developer & UI/UX Designer",
       details: [
         "Developed a web application for commuters to track real-time bus locations and routes.",
-        "Implemented live GPS tracking to show current bus positions on an interactive map.",
         "Created user-friendly interface for easy navigation and bus schedule information.",
         "Built with responsive design to work seamlessly on mobile and desktop devices.",
       ],
