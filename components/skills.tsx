@@ -7,59 +7,55 @@ import { Badge } from "@/components/ui/badge"
 export function Skills() {
 const skillCategories = [
   {
-    title: "Frontend",
+    title: "Frontend Development",
     skills: [
       "React",
       "Next.js",
+      "Vue",
       "TypeScript",
       "JavaScript",
       "HTML",
       "CSS",
-      "Mapbox",
-      "Bootstrap",
       "Responsive Design",
     ],
   },
   {
-    title: "Backend",
+    title: "Backend Development",
     skills: [
+      "Node.js",
       "NestJS",
+      "Go",
+      "PHP",
       "Prisma",
+      "Apollo GraphQL",
       "PostgreSQL",
       "REST API",
-      "PHP",
-      "MySQL",
-      "Firebase",
-      "Go"
-    ],
-  },
-  {
-    title: "Design & Prototyping",
-    skills: [
-      "Figma",
-      "UI/UX Design",
-      "Wireframing",
-      "User Flows",
+      "Slack API",
+      "IoT Integration",
     ],
   },
   {
     title: "Tools & Methodologies",
     skills: [
-      "Git",
       "Agile Development",
-      "XAMPP",
-      "Web Scraping",
+      "Git",
+      "GitHub Actions",
+      "Jest",
+      "Vercel",
       "API Integration",
-      "IoT Integration",
+      "Figma",
     ],
   },
   {
     title: "Soft Skills",
     skills: [
-      "Collaboration and Teamwork",
+      "Problem-Solving",
       "Documentation",
-      "Problem Solving",
-      "Time Management"
+      "Team Collaboration",
+      "Adaptability",
+      "Time Management",
+      "Communication",
+      "Attention to Detail",
     ],
   },
   {
