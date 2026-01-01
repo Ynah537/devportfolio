@@ -25,7 +25,7 @@ export function Hero() {
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-2">Virgilyn Tamayo</h1>
           <h2 className="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-6">Junior Software Engineer</h2>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-           Results-driven Engineering Professional with expertise in full-stack development, database management, and system integration. Skilled in delivering high-quality technical solutions through collaboration with cross-functional teams.
+           Results-driven Software Engineer with hands-on experience in full-stack development, including frontend, backend, and system integrations. Proven track record of delivering scalable, high-quality web applications, real-time dashboards, and AI-integrated tools.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg" className="px-8">

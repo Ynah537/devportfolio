@@ -28,12 +28,12 @@ export function About() {
                 viewport={{ once: true }}
                 className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed"
               >
-                Junior Software Engineer with experience in building full-stack web applications, integrating
-                APIs, and managing relational databases. Skilled in SQL, data processing, and creating
-                interactive dashboards to visualize information for decision-making. Adept at collaborating
-                with cross-functional teams to develop efficient and user-friendly systems. Seeking to apply
-                technical expertise and analytical skills to support database-driven marketing initiatives and
-                operational analytics.
+                Results-driven Software Engineer with hands-on experience in full-stack development, including
+                frontend, backend, and system integrations. Proven track record of delivering scalable, high-quality web
+                applications, real-time dashboards, and AI-integrated tools. Experienced in collaborating with cross-functional
+                teams to build optimized, user-centric solutions. Seeking a challenging Software Engineer role
+                to apply technical expertise, industry experience, and passion for building reliable and intuitive user
+                interfaces.
               </motion.p>
             </CardContent>
           </Card>

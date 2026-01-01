@@ -7,55 +7,70 @@ import { Badge } from "@/components/ui/badge"
 export function Experience() {
   const experiences = [
     {
-      title: "Unione (Honda Project)",
-      role: "Full-stack Developer",
-      technologies: ["React.js", "Next.js", "Chakra UI", "TypeScript", "NestJS", "Prisma"],
+      title: "Uni-One Honda Project",
+      role: "Full-Stack Developer",
+      period: "May 2024 – March 2025",
+      technologies: ["React.js", "Next.js", "Chakra UI", "TypeScript", "NestJS", "Prisma", "Cron Job", "Apollo GraphQL",
+      "PostgreSQL","RESTful APIs", "Chakra UI", "Redux (Redux Toolkit)", "Zustand", "Tailwind CSS", "Jest"],
       description: [
-        "Developed a responsive web application that allows users to create accounts, generate unique barcodes, and register via barcode scanning.",
-        "Created an admin dashboard to manage users, view ride assessments, and track historical ride data with filtering and analytics features.",
-        "Built a manager dashboard with an interactive map that displays real-time device tracking (latitude, longitude), battery status, and geolocation updates using IoT data.",
-        "Implemented role-based access for users, admins, and superadmins to manage reservations, view statistics, and enforce slot limits dynamically.",
-        "Integrated seamless communication between frontend and backend, ensuring real-time updates and device-user mapping."
+        "Built a responsive web user application for real-time IoT device monitoring and management.",
+        "Implemented user registration and QR code scanning to enable riders to access and use Uni-One devices.",
+        "Developed Admin Dashboard to manage user data, reservations, and system records.",
+        "Developed Manager Dashboard to track IoT device data in real time and visualize device locations on an interactive map.",
+        "Designed and implemented a Reservation Booking System with slot-based booking validation logic and mobile-friendly UI for end users."
       ],
     },
     {
-      title: "Reservation Booking System (Honda Project)",
-      role: "Full-stack Developer",
-      technologies: ["React.js", "Next.js", "Chakra UI", "TypeScript", "NestJS", "Prisma"],
-      description: [
-        "Developed a slot-based reservation system where users can book ride schedules with mobile responsiveness and form validation.",
-        "Integrated SendGrid for automated email confirmations and reminders."
-      ],
-    },
-    {
-      title: "Web Scraping & PDF/CSV Export Tool",
-      role: "Full-stack Developer",
+      title: "Web Scraping & PDF Export Tool",
+      role: "Full-Stack Developer",
+      period: "April 2025 – July 2025",
       technologies: ["React.js", "Next.js", "Chakra UI", "TypeScript"],
       description: [
-        "Built a tool that accepts website URLs, scrapes structured content using Puppeteer, and parses the data with OpenAI for enhanced formatting.",
-        "Exported parsed results into downloadable CSV.",
+        "Developed a web application to scrape website data and generate structured PDF reports.",
+        "Integrated AI-based content parsing to extract and summarize relevant information."
       ],
     },
     {
       title: "Slack Notification Crawler",
-      role: "Full-stack Developer",
-      technologies: ["React.js", "Next.js", "NestJS", "TypeScript", "Tailwind CSS", "Prisma", "Cron Job"],
+      role: "Full-Stack Developer",
+      period: "April 2025 – July 2025",
+      technologies: ["React.js", "Next.js", "NestJS", "TypeScript", "Tailwind CSS", "Prisma", "Cron Job",],
       description: [
-        "Created a background crawler using JSDOM that monitors website changes by parsing HTML content and comparing snapshots.",
-        "Integrated OpenAI to interpret scraped data and extract key changes or summaries from site updates.",
-        "Sent real-time notifications to designated Slack channels when updates were detected, improving team awareness.",
-        "Integrated cron job scheduling to automatically run crawling and content comparison at defined intervals."
+        "Built a crawler that monitors websites for changes or updates.",
+        "Integrated AI and Slack APIs to send real-time alerts to designated Slack channels."
       ],
     },
     {
       title: "Task Management Kanban Board",
-      role: "Full-stack Developer",
-      technologies: ["React.js", "Next.js", "NestJS", "Prisma", "Tailwind CSS", "Cron Job"],
+      role: "Full-Stack Developer",
+      period: "April 2025 – July 2025",
+      technologies: ["React.js", "Next.js", "NestJS", "Prisma", "Tailwind CSS", "Cron Job", "PostgreSQL","RESTful APIs", "Jest"],
       description: [
-        "Designed and implemented a real-time drag-and-drop Kanban board for task tracking across multiple teams and spaces.",
-        "Integrated Slack to send notifications on task updates and status changes.",
-        "Incorporated OpenAI to analyze sprint progress and generate AI-powered sprint insights, automatically detecting blocked or stuck tasks across teams.",
-        "Implemented cron job automation to trigger AI-powered batch summarization and sprint insight generation at scheduled times."
+        "Designed and implemented a drag-and-drop Kanban board with real-time updates.",
+        "Enabled task tracking and sprint organization.",
+        "Integrated AI-driven sprint insights analysis for performance and productivity evaluation."
+      ],
+    },
+    {
+      title: "Alphaus Octo Product",
+      role: "Frontend Developer",
+      period: "August 2025 – November 2025",
+      technologies: ["Vue", "Zustand","Pinia",],
+      description: [
+        "Developed frontend features for the Octo cloud optimization platform.",
+        "Built UI components for cloud resource visualization and optimization insights.",
+        "Focused on performance, usability, and data-driven dashboards related to cloud infrastructure."
+      ],
+    },
+    {
+      title: "Quality Assurance Engineer",
+      role: "QA Engineer",
+      period: "December 2025 – Present",
+      technologies: ["Google Cloud Pub/Sub", "Google Cloud Spanner", "Slack API", "Go"],
+      description: [
+        "Implementing CI/CD pipelines to support automated testing workflows.",
+        "Ensuring product quality standards across company applications.",
+        "Developed a real-time test reporting system where automated test results are published to Google Cloud Pub/Sub, persisted in Google Cloud Spanner for scalable analysis, visualized through a monitoring dashboard, and test statuses are automatically sent to integrated Slack channels for real-time team notifications."
       ],
     },
   ]
@@ -99,7 +114,7 @@ export function Experience() {
                   </div>
                   <CardTitle className="text-xl text-gray-900 dark:text-white">{exp.title}</CardTitle>
                   <CardDescription className="text-gray-600 dark:text-gray-400 mt-1">
-                    {exp.role}
+                    {exp.role} | {exp.period}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
