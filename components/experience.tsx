@@ -66,11 +66,15 @@ export function Experience() {
       title: "Quality Assurance Engineer",
       role: "QA Engineer",
       period: "December 2025 – Present",
-      technologies: ["Google Cloud Pub/Sub", "Google Cloud Spanner", "Slack API", "Go"],
+      technologies: ["Go", "Oops", "Google Cloud Pub/Sub", "Google Cloud Spanner", "Slack API", "CI/CD", "REST APIs", "gRPC"],
       description: [
-        "Implementing CI/CD pipelines to support automated testing workflows.",
-        "Ensuring product quality standards across company applications.",
-        "Developed a real-time test reporting system where automated test results are published to Google Cloud Pub/Sub, persisted in Google Cloud Spanner for scalable analysis, visualized through a monitoring dashboard, and test statuses are automatically sent to integrated Slack channels for real-time team notifications."
+        "Worked with an internal test framework called Oops, designed for real API testing against live environments — validating REST and gRPC endpoints, response correctness, and service integration behavior.",
+        "Wrote and maintained end-to-end API test suites using Oops, covering critical user flows and edge cases across multiple microservices.",
+        "Integrated Oops test runs into CI/CD pipelines to enable automated regression testing on every deployment.",
+        "Developed a real-time test reporting system where automated test results are published to Google Cloud Pub/Sub, persisted in Google Cloud Spanner for scalable analysis, and visualized through a monitoring dashboard.",
+        "Configured automated Slack notifications to deliver instant test status updates to the team after each test run.",
+        "Collaborated with backend engineers to identify, reproduce, and document bugs discovered through API-level testing.",
+        "Ensured product quality standards across company applications by continuously expanding test coverage and refining test scenarios."
       ],
     },
   ]
@@ -88,7 +92,7 @@ export function Experience() {
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Work Experience</h2>
           <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
           <div className="flex items-center justify-center mb-8 flex-wrap gap-2 text-center">
-            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Junior Software Engineer</h3>
+            <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">Software Engineer</h3>
             <span className="text-gray-500 dark:text-gray-400">|</span>
             <p className="text-gray-600 dark:text-gray-400">Alphaus Inc. - Japan Based</p>
             <span className="text-gray-500 dark:text-gray-400">|</span>
